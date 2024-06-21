@@ -12,7 +12,7 @@ public class HomePageTest extends BaseClass {
         homepage.VerifyEnglish();
         Thread.sleep(3000);
         homepage.AboutSaf();
-        Thread.sleep(3000);
+        Thread.sleep(4000);
 //        homepage.tuwaiqAcademy();
 //        Thread.sleep(2000);
 

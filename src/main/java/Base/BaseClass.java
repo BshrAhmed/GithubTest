@@ -10,11 +10,13 @@ import java.util.concurrent.TimeUnit;
 public class BaseClass {
 
     public WebDriver driver;
+    //This a public declaration for WebDriver driver
 
     @BeforeClass
     public void setUp() {
-        // Set the path to ChromeDriver executable
+        // Set the path to ChromeDriver executable:
         System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//drivers//chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver", "C:\\Users\\hpcom\\IdeaProjects\\SeleniumPilot\\drivers\\chromedriver.exe");
 
         // Initialize ChromeDriver instance
         driver = new ChromeDriver();
@@ -27,6 +29,7 @@ public class BaseClass {
     @AfterClass
     public void tearDown() {
         driver.quit();
+
 
     }
 }
